@@ -4,11 +4,11 @@ def convert_to_int(str)
   begin
   year = years.index(str)
   raise "Incorrect input" if year.nil?
-  rescue StandardError => e
+  rescue TypeError => e
     puts "Couldn't take #{str}"
     puts "Error was: #{e.message}"
   end
-  
+  year
 end
 
 # PHASE 3
